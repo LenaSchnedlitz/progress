@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  height="100"
+  width="1000"
+  viewBox="0 0 1000 100"
+>
+  <rect
+    height="50"
+    width="1000"
+    x="0"
+    y="25"
+    style="fill:#cccccc;"
+  />
+  <rect
+    height="40"
+    width="100"
+    x="0"
+    y="30"
+    style="fill:#000000;"
+  />
+</svg>
