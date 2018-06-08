@@ -4,7 +4,7 @@ import os
 
 __all__ = ['Format']
 
-SVG_PATH = os.path.join('static', 'svg', 'progress.svg')
+SVG_PATH = os.path.join('static', 'svg', 'progress_minimal.svg')
 
 
 class Format:

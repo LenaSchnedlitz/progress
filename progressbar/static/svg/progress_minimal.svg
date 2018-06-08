@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  height="10"
+  width="100%"
+  viewBox="0 0 100% 10"
+>
+  <rect
+    height="5"
+    width="100%"
+    x="0"
+    y="2.5"
+    style="fill:#cccccc;"
+  />
+  <rect
+    height="4.6"
+    width="{}%"
+    x="0"
+    y="2.7"
+    style="fill:#000000;"
+  />
+  <text
+     xml:space="preserve"
+     style="fill:#ffffff00;font-size:0;"
+  >
+    <tspan
+       x="-5"
+       y="6"
+    >
+      {}
+    </tspan>
+  </text>
+</svg>
