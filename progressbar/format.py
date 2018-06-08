@@ -14,7 +14,10 @@ class Format:
     def svg(self):
         with open('static/svg/progress.svg') as svg_file:
             svg = svg_file.read()
-            return svg.format(self.percentage())
+            return svg.format(
+                self.percentage(),
+                '{}/{}'.format(self.dividend, self.divisor)
+            )
 
     @staticmethod
     def __validate(dividend, divisor, palette):

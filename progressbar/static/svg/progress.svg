@@ -21,4 +21,15 @@
     y="3"
     style="fill:#000000;"
   />
+  <text
+     xml:space="preserve"
+     style="font-size:3.8px;font-family:sans-serif;fill:#ffffff;"
+  >
+    <tspan
+       x="-5"
+       y="6"
+    >
+      {}
+    </tspan>
+  </text>
 </svg>
