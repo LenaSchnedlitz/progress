@@ -1,6 +1,7 @@
 import io
 
 from flask import Flask, render_template, send_file
+
 from format import Format
 
 app = Flask(__name__)
