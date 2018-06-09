@@ -5,8 +5,13 @@ import re
 
 __all__ = ['Format']
 
+HEX_COLOR_REGEX = re.compile('^[0-9a-f]{3}([0-9a-f]{3})?$')
+LAYOUTS = {
+    'default': 'progress_default.svg',
+    'minimal': 'progress_minimal.svg',
+    'badge': 'progress_badge.svg'
+}
 SVG_PATH = os.path.join('static', 'svg')
-HEX_COLOR_RE = re.compile('^[0-9a-fA-F]{3}([0-9a-fA-F]{3})?$')
 
 
 class Format:
@@ -14,7 +19,7 @@ class Format:
         self.__validate(dividend, divisor)
         self.dividend = dividend
         self.divisor = divisor
-        self.theme = theme
+        self.theme = theme.lower()
 
     def percentage(self):
         return self.dividend / self.divisor * 100
@@ -29,6 +34,12 @@ class Format:
         text_format = '{}%' if self.divisor == 100 else '{}/{}'
         return text_format.format(self.dividend, self.divisor)
 
+    def __colors(self):
+        if re.match(HEX_COLOR_REGEX, self.theme):
+            color = '#{}'.format(self.theme)
+            return color, color
+        return '#165bc4', '#12499e'
+
     def __svg_parameters(self):
         start_color, end_color = self.__colors()
         return {
@@ -39,25 +50,14 @@ class Format:
             'end_color': end_color
         }
 
-    # HELPERS
-
-    def __colors(self):
-        if re.match(HEX_COLOR_RE, self.theme):
-            color = '#{}'.format(self.theme)
-            return color, color
-        return '#165bc4', '#12499e'
-
     def __template(self):
-        return {
-            'default': 'progress_default.svg',
-            'minimal': 'progress_minimal.svg'
-        }.get(self.theme, 'progress_default.svg')
+        return LAYOUTS.get(self.theme, LAYOUTS['default'])
 
     def __text_alignment(self):
         percentage = self.percentage()
-        if percentage <= 5:
+        if percentage < 5:
             return 'start'
-        elif percentage >= 95:
+        elif percentage > 95:
             return 'end'
         return 'middle'
 
