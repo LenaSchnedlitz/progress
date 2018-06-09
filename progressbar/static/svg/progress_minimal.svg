@@ -5,31 +5,19 @@
   xmlns="http://www.w3.org/2000/svg"
   height="10"
   width="100%"
-  viewBox="0 0 100% 10"
 >
   <rect
     height="5"
     width="100%"
     x="0"
     y="2.5"
-    style="fill:#cccccc;"
+    style="fill:#e6e6e7;"
   />
   <rect
     height="4.6"
-    width="{}%"
+    width="{width}%"
     x="0"
     y="2.7"
-    style="fill:#000000;"
+    style="fill:#212420;"
   />
-  <text
-     xml:space="preserve"
-     style="fill:#ffffff00;font-size:0;"
-  >
-    <tspan
-       x="-5"
-       y="6"
-    >
-      {}
-    </tspan>
-  </text>
 </svg>

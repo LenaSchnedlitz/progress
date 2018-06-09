@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  height="50"
+  width="100%"
+>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:{start_color};"/>
+      <stop offset="100%" style="stop-color:{end_color};"/>
+    </linearGradient>
+    <linearGradient id="concave_shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0005;"/>
+      <stop offset="5%" style="stop-color:#e8e9e9;"/>
+    </linearGradient>
+    <linearGradient id="convex_shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="75%" style="stop-color:#0000;"/>
+      <stop offset="100%" style="stop-color:#0002;"/>
+    </linearGradient>
+  </defs>
+  <rect
+    height="14"
+    width="100%"
+    x="0"
+    y="6"
+    fill="url(#concave_shadow)"
+  />
+  <rect
+    height="14"
+    width="{width}%"
+    x="0"
+    y="6"
+    fill="url(#gradient)"
+  />
+  <rect
+    height="14"
+    width="{width}%"
+    x="0"
+    y="6"
+    fill="url(#convex_shadow)"
+  />
+  <text
+    x="{width}%"
+    y="36"
+    style="font-size:0.9em;font-family:sans-serif;fill:#000000;"
+    text-anchor="{text_alignment}"
+  >
+    {text}
+  </text>
+</svg>
