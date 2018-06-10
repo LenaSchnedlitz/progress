@@ -86,8 +86,9 @@ class DefaultFormat(Format):
 
 class CustomColorFormat(DefaultFormat):
     def __init__(self, dividend, divisor, color):
-        super().__init__(dividend, divisor)
         self.color = color
+
+        super().__init__(dividend, divisor)
 
     def _colors(self):
         return {
