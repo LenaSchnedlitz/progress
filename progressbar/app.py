@@ -16,7 +16,7 @@ def home():
 @app.route('/<int:dividend>/<int:divisor>')
 @app.route('/<int:dividend>/<int:divisor>/<theme>')
 def load(dividend, divisor=100, theme='default'):
-    svg = Format(dividend, divisor, theme).svg()
+    svg = Format.create(dividend, divisor, theme).svg()
     buffer = io.BytesIO()
     buffer.write(svg.encode())
     buffer.seek(0)
