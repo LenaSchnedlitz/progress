@@ -111,7 +111,7 @@ class CustomColorFormat(GradientFormat):
 
     def _colors(self):
         return {
-            'start_color': '#{}'.format(self.color),  # TODO
+            'start_color': '#{}aa'.format(self.color),
             'end_color': '#{}'.format(self.color)
         }
 
