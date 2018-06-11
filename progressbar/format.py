@@ -1,4 +1,4 @@
-""""""
+"""Formats for progress bar .svgs"""
 
 import os
 import re
