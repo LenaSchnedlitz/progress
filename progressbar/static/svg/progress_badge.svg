@@ -16,34 +16,35 @@
   <clipPath id="clip">
     <rect
       height="20"
-      width="210"
+      width="100"
       rx="3"
       fill="#fff"
     />
   </clipPath>
   <g clip-path="url(#clip)">
-    <path fill="{color}" d="M0 0h69v20H0z"/>
-    <path fill="#555" d="M69 0h141v20H69z"/>
-    <path fill="url(#gradient)" d="M0 0h210v20H0z"/>
+    <path fill="{color}" d="M0 0h{width}v20H0z"/>
+    <path fill="#555" d="M{width} 0h100v20H{width}z"/>
+    <path fill="url(#gradient)" d="M0 0h100v20H0z"/>
   </g>
   <g
     fill="#fff"
     font-family="DejaVu Sans,Verdana,Geneva,sans-serif"
     font-size="110"
-    text-anchor="start"
   >
     <text
-      x="55"
+      x="945"
       y="150"
       fill="#010101"
       fill-opacity=".3"
+      text-anchor="end"
       transform="scale(.1)"
     >
       {text}
     </text>
     <text
-      x="55"
+      x="945"
       y="140"
+      text-anchor="end"
       transform="scale(.1)"
     >
       {text}
