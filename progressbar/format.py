@@ -5,7 +5,7 @@ import re
 
 __all__ = ['Format']
 
-HEX_COLOR_REGEX = re.compile('^[0-9a-f]{3}([0-9a-f]{3})?$')
+HEX_COLOR_REGEX = re.compile('^[0-9a-f]{6}$')
 SVG_PATH = os.path.join('static', 'svg')
 
 
@@ -20,7 +20,7 @@ class Format:
         return self.dividend / self.divisor * 100
 
     def svg(self):
-        assert self.template, 'SVG template must be set.'
+        assert self.template, "SVG template must be set."
         file_path = os.path.join(SVG_PATH, self.template)
         with open(file_path) as svg_file:
             svg = svg_file.read()
@@ -52,14 +52,14 @@ class Format:
             if re.match(HEX_COLOR_REGEX, theme):
                 return CustomColorFormat(dividend, divisor, theme)
             else:
-                raise ValueError('Unknown theme.')
+                raise ValueError("Unknown theme.")
 
     @staticmethod
     def __validate(dividend, divisor):
         if not (0 <= dividend <= divisor):
-            raise ValueError('Invalid dividend.')
+            raise ValueError("Invalid dividend.")
         if not (0 < divisor):
-            raise ValueError('Invalid divisor.')
+            raise ValueError("Invalid divisor.")
 
 
 # FORMATS #####################################################################
@@ -72,7 +72,7 @@ class GradientFormat(Format):
         self.template = 'progress_gradient.svg'
 
     def _colors(self):
-        raise NotImplementedError('')
+        raise NotImplementedError()
 
     def _svg_parameters(self):
         params = self._colors()
