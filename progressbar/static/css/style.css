@@ -11,10 +11,12 @@
 
 ::-webkit-color-swatch {
   border: none;
+  border-radius: 2px;
 }
 
 ::-moz-color-swatch {
   border: none;
+  border-radius: 2px;
 }
 
 ::selection {
@@ -41,6 +43,12 @@ h1, input, label, option, p, select {
 
 h1 {
   font-size: 3em;
+}
+
+@media all and (max-width: 720px) {
+  input[type=number], select {
+    text-align: left;
+  }
 }
 
 /* FORM **********************************************************************/
@@ -190,12 +198,12 @@ select:-moz-focusring {
 
 /* COLOR INPUT ***************************************************************/
 
-.color-input-wrapper {
+#color-input-wrapper {
   overflow: hidden;
   transition: all 0.3s;
 }
 
-.color-input-wrapper.hidden {
+#color-input-wrapper.hidden {
   margin: 0;
   width: 0;
 }
@@ -218,13 +226,13 @@ input[type=color]:focus {
 }
 
 @media all and (max-width: 840px) {
-  .color-input-wrapper.hidden {
+  #color-input-wrapper.hidden {
     display: none;
   }
 }
 
 @media all and (max-width: 720px) {
-  .color-input-wrapper.hidden {
+  #color-input-wrapper.hidden {
     margin: 0;
     height: 0;
     width: auto;

@@ -13,9 +13,24 @@
     rel="stylesheet"
     type="text/css"
   />
+  <script>
+    function toggleColorBox(show) {
+      const colorBox = document.getElementById('color-input-wrapper');
+      if (show) {
+        colorBox.classList.remove('hidden');
+      } else {
+        colorBox.classList.add('hidden');
+      }
+    }
+
+    function selectedOption() {
+      const selection = document.getElementById('theme-input');
+      return selection.options[selection.selectedIndex].value;
+    }
+  </script>
 
 </head>
-<body>
+<body onload="toggleColorBox(selectedOption() === 'Custom Color')">
 
 <h1>Progress Badges</h1>
 <p>This is a short description</p>
@@ -41,6 +56,7 @@
     <label for="theme-input">Theme</label>
     <select
       id="theme-input"
+      onchange="toggleColorBox(this.value === 'Custom Color');"
     >
       <option selected>Default</option>
       <option>Minimal</option>
@@ -48,7 +64,10 @@
       <option>Custom Color</option>
     </select>
   </div>
-  <div class="form-item color-input-wrapper hidden">
+  <div
+    id="color-input-wrapper"
+    class="form-item hidden"
+  >
     <label for="color-input">Color</label>
     <input
       id="color-input"
