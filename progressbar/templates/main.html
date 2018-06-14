@@ -17,5 +17,43 @@
 </head>
 <body>
 
+<h1>Progress Badges</h1>
+<p>This is a short description</p>
+<form>
+  <div class="form-item">
+    <label for="dividend-input">Dividend</label>
+    <input
+      id="dividend-input"
+      autofocus
+      min="0"
+      type="number"
+    >
+  </div>
+  <div class="form-item">
+    <label for="divisor-input">Divisor</label>
+    <input
+      id="divisor-input"
+      type="number"
+      value="100"
+    >
+  </div>
+  <div class="form-item">
+    <label for="theme-input">Theme</label>
+    <select
+      id="theme-input"
+      class="form-item"
+    >
+      <option selected>Default</option>
+      <option>Minimal</option>
+      <option>Badge</option>
+    </select>
+  </div>
+  <input
+    class="form-item"
+    type="submit"
+    value="Create"
+  >
+</form>
+
 </body>
 </html>
