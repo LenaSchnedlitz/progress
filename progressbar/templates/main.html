@@ -34,13 +34,14 @@
 
 <h1>Progress Badges</h1>
 <p>This is a short description</p>
-<form>
+<form method="post">
   <div class="form-item">
     <label for="dividend-input">Dividend</label>
     <input
       id="dividend-input"
       autofocus
       min="0"
+      name="dividend"
       type="number"
     >
   </div>
@@ -48,6 +49,7 @@
     <label for="divisor-input">Divisor</label>
     <input
       id="divisor-input"
+      name="divisor"
       type="number"
       value="100"
     >
@@ -56,6 +58,7 @@
     <label for="theme-input">Theme</label>
     <select
       id="theme-input"
+      name="theme"
       onchange="toggleColorBox(this.value === 'Custom Color');"
     >
       <option selected>Default</option>
@@ -71,6 +74,7 @@
     <label for="color-input">Color</label>
     <input
       id="color-input"
+      name="color"
       type="color"
       value="#00b1e9"
     >
