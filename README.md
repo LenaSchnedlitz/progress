@@ -11,11 +11,11 @@ There are 4 themes:
 #### Default
 This theme is used when no other theme is specified.
 **Example:**  
-<img src="https://progressbadges.herokuapp.com/62">
+<img src="https://progressbadges.herokuapp.com/62" style="width:100%;">
 
 #### Minimal
 **Example:**  
-<img src="https://progressbadges.herokuapp.com/62/100/minimal">
+<img src="https://progressbadges.herokuapp.com/62/100/minimal" style="width:100%;">
 
 #### Badge
 **Example:**  
@@ -24,7 +24,7 @@ This theme is used when no other theme is specified.
 #### Custom Color
 This theme looks like the default one, but allows to set a custom color. 
 **Example:**  
-<img src="https://progressbadges.herokuapp.com/62/100/dec0de">
+<img src="https://progressbadges.herokuapp.com/62/100/dec0de" style="width:100%;">
 
 
 ## How to Use
