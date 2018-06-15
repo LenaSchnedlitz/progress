@@ -19,19 +19,19 @@
   border-radius: 2px;
 }
 
-::selection {
+::-moz-selection {
   background: var(--accent-color);
   color: #fff;
 }
 
-::-moz-selection {
+::selection {
   background: var(--accent-color);
   color: #fff;
 }
 
 body {
   margin: 0;
-  padding-top: 7%;
+  padding-top: 5%;
   background: var(--bg-color);
 }
 
@@ -41,12 +41,42 @@ h1, input, label, option, p, select {
   text-align: center;
 }
 
+/* HEADLINE ******************************************************************/
+
+img {
+  margin: 0 auto 3em;
+  display: block;
+}
+
 h1 {
-  font-size: 3em;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+@media all and (max-width: 840px) {
+  h1 {
+    font-size: 2.5em;
+  }
 }
 
 @media all and (max-width: 720px) {
-  input[type=number], select {
+  img {
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+  }
+
+  h1 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0;
+    font-size: 2em;
+    text-align: left;
+  }
+
+  p {
+    margin-top: 0;
+    margin-left: 3rem;
+    margin-right: 3rem;
     text-align: left;
   }
 }
@@ -136,6 +166,19 @@ input[type=number]:focus {
   box-shadow: inset 0 2px 3px -2px rgba(0, 0, 0, .1);
 }
 
+@media all and (max-width: 840px) {
+  input[type=number] {
+    font-size: 1.25em;
+  }
+}
+
+@media all and (max-width: 720px) {
+  input[type=number] {
+    font-size: 1.2em;
+    text-align: left;
+  }
+}
+
 /* SELECT ********************************************************************/
 
 select {
@@ -194,6 +237,19 @@ select:focus {
 select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
+}
+
+@media all and (max-width: 840px) {
+  select {
+    font-size: 1.25em;
+  }
+}
+
+@media all and (max-width: 720px) {
+  select {
+    font-size: 1.2em;
+    text-align: left;
+  }
 }
 
 /* COLOR INPUT ***************************************************************/
