@@ -20,8 +20,8 @@ Makes progress bars look similar to the famous badges by [shields.io](https://sh
 ![Progress Badge](https://progressbadges.herokuapp.com/45/100/badge)
 
 #### Custom Color
-Looks like the default theme, but allows to set a custom color:  
-<img src="https://progressbadges.herokuapp.com/11/100/c0ffee" width="100%">
+Looks like the default theme, but allows to set a custom color (in hex format, e.g. `00b1e9`):  
+<img src="https://progressbadges.herokuapp.com/11/100/00b1e9" width="100%">
 
 
 ## How to Use
