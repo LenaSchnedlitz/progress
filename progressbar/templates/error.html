@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Progress</title>
+  <link
+    href="{{ url_for('static', filename='img/fav.ico') }}"
+    rel="shortcut icon"
+  />
+  <link
+    href="{{ url_for('static', filename='css/style.css') }}"
+    rel="stylesheet"
+    type="text/css"
+  />
+
+</head>
+<body>
+
+<img src="{{ url_for('static', filename='svg/logo.svg') }}">
+<h1>Error</h1>
+<p>
+  The progress bar you requested does not exist.
+</p>
+<br>
+<p>
+  <a
+    id="error-link"
+    href="{{ url_for('home') }}"
+  >
+    Home
+  </a>
+</p>
+
+</body>
+</html>

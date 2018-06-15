@@ -1,6 +1,7 @@
 import io
+import logging
 
-from flask import Flask, render_template, request, send_file
+from flask import Flask, abort, render_template, request, send_file
 
 from format import Format
 
@@ -8,11 +9,22 @@ app = Flask(__name__)
 
 
 def file(dividend, divisor, theme):
-    svg = Format.create(dividend, divisor, theme).svg()
-    buffer = io.BytesIO()
-    buffer.write(svg.encode())
-    buffer.seek(0)
-    return send_file(buffer, mimetype='image/svg+xml')
+    """Return a progress bar .svg-file for the given parameters"""
+
+    try:
+        svg = Format.create(dividend, divisor, theme).svg()
+        buffer = io.BytesIO()
+        buffer.write(svg.encode())
+        buffer.seek(0)
+        return send_file(buffer, mimetype='image/svg+xml')
+    except ValueError:
+        logging.error("SVG creation failed.")
+        abort(404)
+
+
+@app.errorhandler(404)
+def file_not_found(_):
+    return render_template('error.html'), 404
 
 
 @app.route("/")

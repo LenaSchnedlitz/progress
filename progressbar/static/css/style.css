@@ -360,8 +360,16 @@ aside a {
     bottom: 3rem;
     text-align: center;
   }
-  
+
   aside br {
     display: none;
   }
+}
+
+/* ERROR PAGE ****************************************************************/
+
+#error-link {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: none;
 }
