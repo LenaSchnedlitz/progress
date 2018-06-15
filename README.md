@@ -46,7 +46,7 @@ Progress bars can be requested directly using URL parameters, e.g. `localhost:50
 ```
 
 #### User Interface
-Progress bars can also be created via UI. Simply fill in the input form and press the submit button.
+Progress bars can also be created via UI. Simply fill out the form and click 'Create'.
 
 
 ## Online
