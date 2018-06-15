@@ -63,10 +63,10 @@ Produces simple progress bars without text:
 Makes progress bars look similar to the famous badges by [shields.io](https://shields.io):  
 
 ```html
-![Progress Badge](https://progressbadges.herokuapp.com/45/100/badge)
+![Progress Badge](https://progressbadges.herokuapp.com/38/100/badge)
 ```
 
-![Progress Badge](https://progressbadges.herokuapp.com/45/100/badge)
+![Progress Badge](https://progressbadges.herokuapp.com/38/100/badge)
 
 #### Custom Color
 Looks like the default theme, but allows to set a custom (hex) color:  
