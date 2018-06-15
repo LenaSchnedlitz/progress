@@ -9,22 +9,24 @@ Progress bars for your README files.
 ## Themes
 There are 4 themes:  
 #### Default
-This theme is used when no other theme is specified.
-**Example:**  
-<img src="https://progressbadges.herokuapp.com/62" style="width:100%;">
+This theme is used when no other theme is specified.  
+**Example:**   
+![Default Progress Bar](https://progressbadges.herokuapp.com/73)
 
 #### Minimal
-**Example:**  
-<img src="https://progressbadges.herokuapp.com/62/100/minimal" style="width:100%;">
+This theme produces simple progress bars without text.
+**Example:**   
+![Minimal Progress Bar](https://progressbadges.herokuapp.com/73/100/minimal)
 
 #### Badge
+This theme makes progress bars look similar to the famous badges by [shields.io](https://shields.io).
 **Example:**  
-<img src="https://progressbadges.herokuapp.com/62/100/badge">
+![Progress Badge](https://progressbadges.herokuapp.com/73/100/badge)
 
 #### Custom Color
-This theme looks like the default one, but allows to set a custom color. 
+This theme looks like the default one, but allows to set a custom color.  
 **Example:**  
-<img src="https://progressbadges.herokuapp.com/62/100/dec0de" style="width:100%;">
+![Custom Color Progress Bar](https://progressbadges.herokuapp.com/73/100/c0ffee)
 
 
 ## How to Use
