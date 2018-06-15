@@ -6,22 +6,14 @@
 # Progress
 Progress bars for your README files.   
 
-## Themes 
-#### Default
-Used when no other theme is specified:  
+#### Quickstart
+
+```html
 <img src="https://progressbadges.herokuapp.com/79" width="100%">
+```
 
-#### Minimal
-Produces simple progress bars without text:  
-<img src="https://progressbadges.herokuapp.com/66/100/minimal" width="100%">
-
-#### Badge
-Makes progress bars look similar to the famous badges by [shields.io](https://shields.io):  
-![Progress Badge](https://progressbadges.herokuapp.com/45/100/badge)
-
-#### Custom Color
-Looks like the default theme, but allows to set a custom color (in hex format, e.g. `00b1e9`):  
-<img src="https://progressbadges.herokuapp.com/11/100/00b1e9" width="100%">
+produces  
+<img src="https://progressbadges.herokuapp.com/79" width="100%">
 
 
 ## How to Use
@@ -40,7 +32,7 @@ python app.py
 ```
 
 #### URL Parameter
-Progress bars can be requested directly using URL parameters, e.g. `localhost:5000/10`. URLs are structured as follows:
+Progress bars can be requested directly using URL parameters. URLs are structured as follows:
 ```
 <base-URL>/<dividend>/<divisor[optional]>/<theme[optional]>
 ```
@@ -49,5 +41,39 @@ Progress bars can be requested directly using URL parameters, e.g. `localhost:50
 Progress bars can also be created via UI. Simply fill out the form and click 'Create'.
 
 
-## Online
-To see the web app in action, click [here](https://progressbadges.herokuapp.com).
+## Themes 
+#### Default
+Used when no other theme is specified:  
+
+```html 
+<img src="https://progressbadges.herokuapp.com/38/100/default" width="100%">
+```
+
+<img src="https://progressbadges.herokuapp.com/38/100/default" width="100%">
+
+#### Minimal
+Produces simple progress bars without text:  
+
+```html
+<img src="https://progressbadges.herokuapp.com/38/100/minimal" width="100%">
+```
+
+<img src="https://progressbadges.herokuapp.com/38/100/minimal" width="100%">
+
+#### Badge
+Makes progress bars look similar to the famous badges by [shields.io](https://shields.io):  
+
+```html
+![Progress Badge](https://progressbadges.herokuapp.com/45/100/badge)
+```
+
+![Progress Badge](https://progressbadges.herokuapp.com/45/100/badge)
+
+#### Custom Color
+Looks like the default theme, but allows to set a custom (hex) color:  
+
+```html
+<img src="https://progressbadges.herokuapp.com/38/100/00b1e9" width="100%">
+```
+
+<img src="https://progressbadges.herokuapp.com/38/100/00b1e9" width="100%">
