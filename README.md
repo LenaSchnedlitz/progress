@@ -11,8 +11,7 @@ Progress bars for your README files.
 ```html
 <img src="https://progressbadges.herokuapp.com/79" width="100%">
 ```
-
-produces  
+ 
 <img src="https://progressbadges.herokuapp.com/79" width="100%">
 
 
