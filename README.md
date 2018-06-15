@@ -11,17 +11,17 @@ There are 4 themes:
 #### Default
 This theme is used when no other theme is specified.  
 **Example:**   
-![Default Progress Bar](https://progressbadges.herokuapp.com/73)
+![Default Progress Bar](https://progressbadges.herokuapp.com/16)
 
 #### Minimal
 This theme produces simple progress bars without text.
 **Example:**   
-![Minimal Progress Bar](https://progressbadges.herokuapp.com/73/100/minimal)
+![Minimal Progress Bar](https://progressbadges.herokuapp.com/27/100/minimal)
 
 #### Badge
 This theme makes progress bars look similar to the famous badges by [shields.io](https://shields.io).
 **Example:**  
-![Progress Badge](https://progressbadges.herokuapp.com/73/100/badge)
+![Progress Badge](https://progressbadges.herokuapp.com/44/100/badge)
 
 #### Custom Color
 This theme looks like the default one, but allows to set a custom color.  
