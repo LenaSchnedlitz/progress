@@ -6,7 +6,7 @@
 # Progress
 Progress bars for your README files.   
 
-## Themes
+## Themes 
 #### Default
 Used when no other theme is specified:  
 <img src="https://progressbadges.herokuapp.com/16" width="100%">
