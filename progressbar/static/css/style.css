@@ -41,6 +41,11 @@ h1, input, label, option, p, select {
   text-align: center;
 }
 
+a, aside {
+  color: var(--text-color);
+  font-family: 'Miriam Libre', sans-serif;
+}
+
 /* HEADLINE ******************************************************************/
 
 img {
@@ -327,5 +332,36 @@ input[type=submit]:active {
 @media all and (max-width: 720px) {
   input[type=submit] {
     margin-top: 1em;
+  }
+}
+
+/* ABOUT ME ******************************************************************/
+
+aside {
+  height: auto;
+  position: fixed;
+  left: 1.25rem;
+  bottom: 1.25rem;
+
+  font-size: 0.75rem;
+  line-height: 150%;
+}
+
+aside a {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media all and (max-width: 720px) {
+  aside {
+    position: relative;
+    left: auto;
+    bottom: 3rem;
+    text-align: center;
+  }
+  
+  aside br {
+    display: none;
   }
 }
