@@ -16,7 +16,7 @@ Produces simple progress bars without text:
 <img src="https://progressbadges.herokuapp.com/66/100/minimal" width="100%">
 
 #### Badge
-Makes progress bars look similar to the famous badges by [shields.io](https://shields.io): 
+Makes progress bars look similar to the famous badges by [shields.io](https://shields.io):  
 ![Progress Badge](https://progressbadges.herokuapp.com/45/100/badge)
 
 #### Custom Color
