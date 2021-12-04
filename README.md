@@ -1,6 +1,6 @@
-<p align="center">
-  <img src="https://github.com/Mailea/progress/blob/master/progressbar/static/img/logo.png"/>
-</p>
+<div align="center">
+  <img src="progressbar/static/img/logo.png"/>
+</div>
 
 
 # Progress
