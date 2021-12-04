@@ -1,88 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Progress</title>
+    <link
+      href="{{ url_for('static', filename='img/fav.ico') }}"
+      rel="shortcut icon"
+    />
+    <link
+      href="{{ url_for('static', filename='css/style.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  </head>
+  <body onload="toggleColorBox(selectedOption() === 'Custom Color')">
+    <img src="{{ url_for('static', filename='svg/logo.svg') }}" />
+    <h1>Progress Badges</h1>
+    <p>Progress bars for your README files.</p>
+    <form method="post">
+      <div class="form-item">
+        <label for="dividend-input">Dividend</label>
+        <input
+          id="dividend-input"
+          autofocus
+          min="0"
+          name="dividend"
+          required
+          type="number"
+        />
+      </div>
+      <div class="form-item">
+        <label for="divisor-input">Divisor</label>
+        <input
+          id="divisor-input"
+          name="divisor"
+          type="number"
+          required
+          value="100"
+        />
+      </div>
+      <div class="form-item">
+        <label for="theme-input">Theme</label>
+        <select
+          id="theme-input"
+          name="theme"
+          onchange="toggleColorBox(this.value === 'Custom Color');"
+        >
+          <option selected>Default</option>
+          <option>Minimal</option>
+          <option>Badge</option>
+          <option>Custom Color</option>
+        </select>
+      </div>
+      <div id="color-input-wrapper" class="form-item hidden">
+        <label for="color-input">Color</label>
+        <input id="color-input" name="color" type="color" value="#00b1e9" />
+      </div>
+      <input class="form-item" type="submit" value="Create" />
+    </form>
 
-  <meta charset="UTF-8">
-  <title>Progress</title>
-  <link
-    href="{{ url_for('static', filename='img/fav.ico') }}"
-    rel="shortcut icon"
-  />
-  <link
-    href="{{ url_for('static', filename='css/style.css') }}"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
-
-</head>
-<body onload="toggleColorBox(selectedOption() === 'Custom Color')">
-
-<img src="{{ url_for('static', filename='svg/logo.svg') }}">
-<h1>Progress Badges</h1>
-<p>Progress bars for your README files.</p>
-<form method="post">
-  <div class="form-item">
-    <label for="dividend-input">Dividend</label>
-    <input
-      id="dividend-input"
-      autofocus
-      min="0"
-      name="dividend"
-      required
-      type="number"
-    >
-  </div>
-  <div class="form-item">
-    <label for="divisor-input">Divisor</label>
-    <input
-      id="divisor-input"
-      name="divisor"
-      type="number"
-      required
-      value="100"
-    >
-  </div>
-  <div class="form-item">
-    <label for="theme-input">Theme</label>
-    <select
-      id="theme-input"
-      name="theme"
-      onchange="toggleColorBox(this.value === 'Custom Color');"
-    >
-      <option selected>Default</option>
-      <option>Minimal</option>
-      <option>Badge</option>
-      <option>Custom Color</option>
-    </select>
-  </div>
-  <div
-    id="color-input-wrapper"
-    class="form-item hidden"
-  >
-    <label for="color-input">Color</label>
-    <input
-      id="color-input"
-      name="color"
-      type="color"
-      value="#00b1e9"
-    >
-  </div>
-  <input
-    class="form-item"
-    type="submit"
-    value="Create"
-  >
-</form>
-
-<aside>
-  Interested?
-  <br/>
-  Fork me on
-  <a href="https://github.com/Mailea/progress">
-    GitHub
-  </a>
-</aside>
-
-</body>
+    <aside>
+      Interested?
+      <br />
+      Fork me on
+      <a href="https://github.com/Mailea/progress"> GitHub </a>
+    </aside>
+  </body>
 </html>
